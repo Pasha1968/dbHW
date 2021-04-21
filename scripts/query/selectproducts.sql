@@ -1,5 +1,3 @@
-SELECT  Producers.ProducerName AS Producer,
-        SUM(WarehouseProduct.Quantity) AS Product_quantity
-FROM Products JOIN Producers ON Products.ProducerId = Producers.Id
-              JOIN WarehouseProduct ON Products.Id = WarehouseProduct.ProductId
-GROUP BY Producers.ProducerName
+SELECT  manufacturer.manufacturerName AS manufacturer,
+		Products.amount AS amount
+FROM [products].[dbo].[manufacturer] JOIN [products].[dbo].[Products]  ON manufacturer.manufactrerId = Products.manufacturerId
