@@ -34,3 +34,8 @@ CREATE TABLE [dbo].[manufacturer]
 	[Code] INT NOT NULL,
 	[manufacturerName] NVARCHAR(100) NOT NULL
 );
+INSERT INTO [dbo].[manufacturer] ([Code],[manufacturerName])
+VALUES 
+(1,'name 1 '),
+(2,'name 2')
+;

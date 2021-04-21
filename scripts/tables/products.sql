@@ -10,6 +10,8 @@ CREATE TABLE [dbo].[Products]
 	[amount] INT NULL
 );
 
-	GO
-	CREATE UNIQUE NONCLUSTERED INDEX [ProductName_IX]
-    ON [dbo].[Products] ([ProductName]);
+INSERT INTO [dbo].[Products] ([ProductName],[manufacturerId],[warehouseId],[amount])
+VALUES 
+('name 1 ',1,1,1),
+('name 2',1,1,1)
+;
